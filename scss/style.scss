@@ -1,7 +1,5 @@
-
 @import "../bower_components/normalize-css/normalize.css";
 @import "../bower_components/typeplate-starter-kit/css/typeplate.css";
-
 /**
  * BOX-SIZING
  */
@@ -11,7 +9,6 @@
 *:after {
     box-sizing: border-box;
 }
-
 /**
  * GRIDS
  */
@@ -37,7 +34,9 @@
     }
 }
 
-@define-mixin gridify $col, $width, $gutter: 2 {
+@define-mixin gridify $col,
+$width,
+$gutter: 2 {
     @media only screen and (min-width: $(width)px) {
         .grid-$(col)-$(width) {
             & > * {
@@ -48,9 +47,11 @@
     }
 }
 
-@mixin gridify 2, 400 {}
-@mixin gridify 4, 600 {}
+@mixin gridify 2,
+400 {}
 
+@mixin gridify 4,
+600 {}
 /**
  * PACE (automatic pre-loader thingy)
  */
@@ -88,3 +89,158 @@ img {
 /**
  * YOUR CODE HERE
  */
+
+#background {
+    background-color: #546C84;
+    width: 100%;
+    height: 690px;
+    margin: 0;
+}
+
+.header {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    border-bottom: 7px solid #3D5166;
+    top: 0;
+    box-shadow: 0px 0px 10px
+}
+
+.footer {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 84px;
+    bottom: 0;
+    border-top: 5px solid #3D5166;
+}
+
+#logo {
+    height: 50px;
+    margin: 25px;
+    margin-left: 7%;
+    float: left;
+    -webkit-filter: invert(40%);
+    text-shadow: 2px black;
+}
+
+span {
+    position: relative;
+    color: #34495E;
+    float: left;
+    font-size: 55px;
+    margin: 30px;
+    margin-top: 12px;
+    font-family: SignPainter;
+    font-weight: bold;
+    margin-left: -13px;
+    text-shadow: 2px 1.5px #d4d4d4;
+}
+
+.tab {
+    display: inline-block;
+    float: right;
+    color: #616870;
+    font-family: PT Sans;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 42px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-shadow: 1px 1px #d4d4d4;
+}
+
+.tab:hover {
+    color: #FF7D7C;
+}
+
+#menu {
+    margin-right: 7%;
+}
+
+#time_date {
+    margin: 17px;
+    float: left;
+    margin-bottom: 0px;
+    margin-top: 14xpx;
+    min-width: 175px;
+    font-family: Arial;
+    text-align: right;
+    color: white;
+    font-size: 15px;
+}
+
+.date {
+    font-size: 15px;
+    color: white;
+    margin-top: 14px;
+    margin-left: 5px;
+}
+
+#line {
+    background-color: white;
+    height: 65px;
+    width: 4px;
+    margin: 5px;
+    float: left;
+    border: 2px solid white;
+    margin-top: 0px;
+    margin-bottom: 0px
+}
+
+#content {
+    height: 65px;
+    margin: 10px;
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-width: 550px;
+}
+
+#circle {
+    border: 4px solid #546C84;
+    width: 30px;
+    height: 30px;
+    background-color: #5FA873;
+    border-radius: 100%;
+    position: absolute;
+    transform: translate(-15px, 25%);
+}
+
+#main {
+    min-width: 1000px;
+    margin-top: 18%;
+    position: absolute;
+    margin-left: 60%;
+}
+
+.content {
+    color: white;
+    float: left;
+    width: 60%;
+    margin-top: 18%;
+    margin-left: 10%;
+}
+
+hr{
+    width: 200px;
+    height: 2px;
+    color: white;       
+    float: left;
+    background-color: white;
+}
+
+h4{
+    color: white;
+    margin-bottom: 10px;
+}
+
+#green{
+    background-color: green;
+    color: white;
+    float: left;
+    width: 60%;
+    margin-top: 18%;
+    margin-left: 10%; 
+}
